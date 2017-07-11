@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>youTube search</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>SEARCH <span>YouTube</span></h1>
+        <p> </p>
+      </header>
+      <section>
+        <form id="searchForm" onsubmit="return search()">
+          <div class="fieldContainer">
+            <input type="search" id="searchInput" class="searchField" placeholder="search...">
+            <input type="button" id="searchBtn">
+          </div>
+        </form>
+        <ul id="results"></ul>
+        <ul id="buttons"></ul>
+      </section>
+      <footer>
+        <p>Copyright &copy; 2017, All rights reserved by AP.</p>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
